@@ -1,0 +1,33 @@
+
+{
+  "name": "react-native-files-viewer",
+  "version": "1.0.0",
+  "description": "React Native Native Module Bridge Quicklock Document Viewer for IOS + Android supports pdf, png, jpg, xls, ppt, doc, docx, pptx, xlx + Video Player mp4 supported ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "ios",
+    "android",
+    "pdf",
+    "video",
+    "Video Player",
+    "Doc Viewer"
+  ],
+  "author": "Kurisu",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.3.0",
+    "react-native": "^0.61.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurisu994/react-native-files-viewer.git"
+  },
+  "readme": "https://github.com/kurisu994/react-native-files-viewer/blob/main/README.md",
+  "homepage": "https://github.com/kurisu994/react-native-files-viewer/blob/main/README.md"
+}
