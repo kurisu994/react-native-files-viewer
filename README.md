@@ -74,9 +74,8 @@ If your project uses CocoaPods to manage React installation (especially with Exp
 ## Usage
 ```javascript
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, Platform } from 'react-native';
-import OpenFile from 'react-native-file-viewer';
-import { Provider, ListRow } from 'components/elements';
+import { Platform, Button } from 'react-native';
+import OpenFile from 'react-native-files-viewer';
 import { NavigationScreenProps } from 'react-navigation';
 import DocumentPicker from 'react-native-document-picker';
 
@@ -165,23 +164,25 @@ export default ({ navigation }: Props) => {
   }
   
   return (
-    <Button
-      onPress={handlePress}
-      title="Press Me Open Doc Url"
-      accessibilityLabel="See a Document"
-    />
-    <Button
-      onPress={handlePressLocal}
-      title="Press Me Open Local File"
-      accessibilityLabel="See a Document"
-    />
-    <Button
-      onPress={handlePressb64}
-      title="Press Me Open base64 File"
-      accessibilityLabel="See a Document"
-    />
+    <>
+      <Button
+        onPress={handlePress}
+        title="Press Me Open Doc Url"
+        accessibilityLabel="See a Document" 
+      />
+      <Button
+        onPress={handlePressLocal}
+        title="Press Me Open Local File"
+        accessibilityLabel="See a Document" 
+      />
+      <Button
+        onPress={handlePressb64}
+        title="Press Me Open base64 File"
+        accessibilityLabel="See a Document" 
+      />
+    </>
   );
-}
+};
 ```
 
 
