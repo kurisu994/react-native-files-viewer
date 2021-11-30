@@ -184,23 +184,19 @@ public class RNFileViewerModule extends ReactContextBaseJavaModule {
 
                 URL url2 = new URL(url);
                 HttpURLConnection conn = (HttpURLConnection) url2.openConnection();
-                //GET Connection Content length
-                int fileLength = conn.getContentLength();
                 if (auth != null) {
                     conn.setRequestProperty("Cookie", auth);
                 }
-
                 InputStream reader = conn.getInputStream();
-
                 // use cache
                 File f = cache != null && cache ? new File(outputDir, fileName) : File.createTempFile(FILE_TYPE_PREFIX, "." + extension,
                         outputDir);
-
                 // make sure the receiving app can read this file
                 f.setReadable(true, false);
                 System.out.println(f.getPath());
                 FileOutputStream outStream = new FileOutputStream(f);
-
+                 //GET Connection Content length
+                int fileLength = conn.getContentLength();
                 byte[] buffer = new byte[4096];
                 long total = 0;
                 int readBytes = reader.read(buffer);
