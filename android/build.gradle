@@ -1,26 +1,28 @@
 
+def getExt(prop, fallback) {
+    rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+}
+
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'com.android.tools.build:gradle:3.5.4'
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    compileSdkVersion getExt('compileSdkVersion', 30)
+    buildToolsVersion getExt('buildToolsVersion', '30.0.2')
 
     defaultConfig {
-        minSdkVersion 17
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion getExt('minSdkVersion', 24)
+        targetSdkVersion getExt('targetSdkVersion', 30)
     }
     lintOptions {
         abortOnError false
@@ -32,6 +34,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.facebook.react:react-native:0.20.1'
+    implementation 'com.facebook.react:react-native:+'
 }
   

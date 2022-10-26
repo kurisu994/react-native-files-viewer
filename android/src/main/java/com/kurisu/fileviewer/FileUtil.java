@@ -20,13 +20,10 @@ public class FileUtil {
         try {
             int sdkVersion = Build.VERSION.SDK_INT;
             if (sdkVersion >= 19) {
-                //
-                // return getRealPathFromUri_AboveApi19(uri);
                 return getPath(context, uri);
             } else {
                 return getRealFilePath(context, uri);
             }
-            //return new File(new URI(uri.toString())).getAbsolutePath();
         } catch (Exception e) {
             e.printStackTrace();
         }
