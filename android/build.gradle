@@ -18,7 +18,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion getExt('compileSdkVersion', 29)
-    buildToolsVersion getExt('buildToolsVersion', '39.0.3')
+    buildToolsVersion getExt('buildToolsVersion', '29.0.3')
 
     defaultConfig {
         minSdkVersion getExt('minSdkVersion', 21)
