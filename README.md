@@ -1,5 +1,5 @@
 
-# react-native-files-viewer [![npm version](https://img.shields.io/npm/v/react-native-files-viewer.svg?style=flat)](https://www.npmjs.com/package/react-native-doc-viewer)![Platform](https://img.shields.io/badge/platform-react--native%20%5Bios%20%26%20android%5D-blue.svg)![License](https://img.shields.io/npm/l/express.svg)
+# react-native-files-viewer [![npm version](https://img.shields.io/npm/v/react-native-files-viewer.svg?style=flat)](https://www.npmjs.com/package/react-native-files-viewer)![Platform](https://img.shields.io/badge/platform-react--native%20%5Bios%20%26%20android%5D-blue.svg)![License](https://img.shields.io/npm/l/express.svg)
 
 ![nodei.co](https://nodei.co/npm/react-native-files-viewer.png?downloads=true&downloadRank=true&stars=true)
 
